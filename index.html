@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Чтобы не сохранять номер</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" type="image/png" href="img/w.svg">
+</head>
+<body>
+	<h1 align="center">Напишите номер без 8-ки</h1>
+
+	<div align="center" class="in container col d-flex justify-content-center">
+		<input type=text id="myText" class=" form-control"/>
+		<input type=button value="Написать" onclick="myFunction()" class="btn btn-outline-primary"/>
+	</div>
+
+	<script>
+		function myFunction() {
+		  	window.open(`https://wa.me/7${document.getElementById("myText").value}`,'_blank');
+		  	document.getElementById("myText").value="";
+		}
+	</script>
+</body>
+</html>
